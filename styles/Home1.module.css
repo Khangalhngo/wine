@@ -1,0 +1,155 @@
+.code {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+.datatable {
+  margin-top: 50px;
+  width: 100%;
+}
+.searchbar {
+  /* margin-top: 60px; */
+  background-color: #e8f9fd;
+  width: 300px;
+  height: 100%;
+}
+.parent {
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr); */
+  grid-template-columns: 20%, 80%;
+  grid-template-rows: repeat(0, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.div2 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.div3 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.searchSection {
+  text-align: center;
+}
+.searchSection input {
+  margin-top: 70px;
+  margin-bottom: 10px;
+  width: 50%;
+  background-color: white;
+  /* height: 30px;
+  background-color: white;
+  border-radius: 45px;
+  width: 200px;
+  border-width: 0px;
+  border-color: grey;
+  border-style: solid;
+  width: 100%; */
+  border: 3px solid #00b4cc;
+  border-right: none;
+  padding: 5px;
+  height: 30px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9dbfaf;
+}
+/* .searchSection:focus {
+  color: #00b4cc;
+} */
+
+.searchSection button {
+  /* height: 30px;
+  background-color: #ff1e00;
+  border-radius: 45px;
+  width: 80px;
+  border-width: 0px; */
+  width: 20%;
+  height: 30px;
+  border: 3px solid #00b4cc;
+  background: #00b4cc;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  /* font-size: 11px; */
+}
+.radioName {
+  display: flex;
+  align-items: center;
+
+  border-radius: 100px;
+  padding: 12px 14px;
+  margin: 10px 0;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+.radioName:hover,
+.radioName:focus-within {
+  background: #00b4cc;
+  color: white;
+}
+.inpu {
+  position: absolute;
+  left: 10px;
+  top: 0;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  z-index: -1;
+}
+.raddesign {
+  width: 22px;
+  height: 22px;
+  border-radius: 100px;
+
+  background: linear-gradient(
+    to right bottom,
+    hsl(154, 97%, 62%),
+    hsl(225, 97%, 62%)
+  );
+  position: relative;
+}
+
+.raddesign::before {
+  content: "";
+
+  display: inline-block;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+
+  background: hsl(0, 0%, 90%);
+  transform: scale(1.1);
+  transition: 0.4s;
+}
+.inpu:checked + .raddesign::before {
+  transform: scale(0);
+}
+.text {
+  color: hsl(0, 0%, 60%);
+  margin-left: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 800;
+
+  transition: 0.3s;
+}
+
+.inpu:checked ~ .text {
+  color: hsl(0, 0%, 40%);
+}
+.BackButton {
+  height: 40px;
+  margin-top: 10px;
+  margin-right: 10px;
+  float: right;
+  width: 100px;
+  background-color: #00b4cc;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}

@@ -1,0 +1,41 @@
+.pricerange {
+  display: grid;
+}
+.pricerange input {
+  width: 40%;
+  background-color: rgb(255, 255, 255);
+  border: 3px solid #00b4cc;
+  padding: 5px;
+  height: 25px;
+  border-radius: 5px;
+  outline: none;
+  color: #9dbfaf;
+}
+.pricerange label {
+  width: 100%;
+  margin-left: 15px;
+  color: hsl(0, 0%, 60%);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 800;
+
+  transition: 0.3s;
+}
+.line1 {
+  height: 1px;
+  background: #00b4cc;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+/* .rangecontainer {
+  display: none;
+} */
+.on {
+  display: grid;
+}
+.off {
+  display: none;
+}
